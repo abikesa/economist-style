@@ -17,7 +17,7 @@
 
     h1 {
       font-size: 2.5rem;
-      font-weight: bold;
+      font-weight: normal;
       margin: 0.5rem 0;
     }
 
@@ -27,19 +27,7 @@
       color: #333;
       margin: 0.25rem 0 2rem 0;
     }
-
-.section-label {
-  color: #d6241d;
-  font-weight: normal;
-  text-transform: lowercase;
-  font-size: 0.99rem;
-}
-
-.section-label::first-letter {
-  text-transform: uppercase;
-}
-
-
+    
     .byline {
       font-weight: normal;
       margin: 1rem 0;
@@ -75,11 +63,34 @@
       text-align: right;
       margin-top: 3rem;
     }
+    .section-prefix {
+  color: #d6241d;
+  font-weight: normal;
+  font-size: 0.99rem;
+  text-transform: capitalize;
+}
+
+.section-separator {
+  color: #121212;
+  font-size: 0.99rem;
+}
+
+.section-title {
+  color: #121212;
+  font-size: 0.99rem;
+  text-transform: capitalize;
+}
+
   </style>
 </head>
 <body>
 
-<div class="section-label">Business | The new atomic age</div>
+<div class="section-label">
+  <span class="section-prefix">Business</span> 
+  <span class="section-separator"> | </span> 
+  <span class="section-title">The New Atomic Age</span>
+</div>
+
 
 <h1>Peter Thiel doubles down on patriotism in the Trump era</h1>
 <h2>Venture capital and the government are now brothers in arms</h2>
